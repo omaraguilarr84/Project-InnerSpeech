@@ -8,7 +8,7 @@
 % EEG = pop_readbdf('subject02_session01.bdf', [1 1306] ,73,48);
 % EEG = eeg_checkset( EEG );
 
-bdf_fp = '/Users/omaraguilarjr/GATech/Project-InnerSpeech/Data/ds004196/sub-01/ses-EEG/eeg/sub-01_ses-EEG_task-inner_eeg.bdf';
+bdf_fp = "C:\Users\omarh\Documents\GaTech\Project-InnerSpeech\Data\ds004196\sub-01\ses-EEG\eeg\sub-01_ses-EEG_task-inner_eeg.bdf";
 
 EEG = pop_biosig(bdf_fp, 'channels', [1:64], 'ref', 48);
 %[~, EEG, ~] = pop_newset(ALLEEG, EEG, 2,'gui','off'); 

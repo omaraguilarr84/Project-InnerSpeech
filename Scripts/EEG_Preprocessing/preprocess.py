@@ -373,7 +373,7 @@ if __name__ == "__main__":
     timings = os.path.join(IspeecAI_EEG,'InnerSpeech-EEG-0014-0{}-1-export.txt') # tab-separated timings file
     data = os.path.join(IspeecAI_EEG,'subject0{}_session01.bdf') # BioSemi signal data file
 
-    os.chdir(IspeecAI) # jump to correct directory
+    os.chdir('Document\\GaTech\\Project-InnerSpeech') # jump to correct directory
     print(f"Jumping to working directory: {os.getcwd()}")
     paths = {
         'IspeecAI':IspeecAI,
@@ -405,6 +405,7 @@ if __name__ == "__main__":
     models_dir, results_dir = 'models', 'results'
     args.build = args.model + args.build # add descriptor to model .pth save
     
+    '''
     # =================network setup====================
     # Set if you want to use GPU
     cuda = True if torch.cuda.is_available() else False
@@ -436,3 +437,4 @@ if __name__ == "__main__":
     train_data, val_data, test_data = get_data(input_dir, target_dir) # Get data from user-specified path
     train_sampler, val_sampler = RandomSampler(train_data), SequentialSampler(val_data) # Samplers for training and validation batches
     # ==================================================
+'''
